@@ -16,13 +16,22 @@
  *
  * **/
 
+function getStairs() {
+   let memo = new Map();
 
-function climbStairs(n) {
-    if(n === 1) return n;
-    if(n === 2) return n;
+    function climbStairs(n, memo) {
 
-    return (climbStairs(n) + climbStairs(n-1));
-};
+        if (n === 1) return n;
+        if (n === 2) return n;
+
+        if(memo.has(n)){
+            memo.get(n);
+        }
+
+        return (climbStairs(n, memo) + climbStairs(n - 1, memo));
+    };
+
+}
 
 
-console.log(climbStairs(2));
+console.log(getStairs(2));
