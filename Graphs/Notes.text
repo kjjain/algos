@@ -1,0 +1,75 @@
+Graphs:
+
+Social network of friends
+Airport Connections
+Google Maps
+
+Types of Graphs:
+
+1.Undirected/Bidirectional Graph: edges have no orientation
+
+eg: roads
+
+2.Directed Graphs: edges are directed
+
+eg: gifts giving to friends
+
+
+3.Weighted Graphs: Edges have weight
+
+They can be both directed and undirected
+
+eg: distance in KM for roads
+
+
+4. Special Graphs:
+
+a. Trees: undirected graph with no cycles
+
+b. Rooted Trees:
+    1. Out-tree: edges are pointing from root node to outer nodes
+    2. In-tree: edges are pointing from outer node to root node.
+
+
+5. Directed Acyclic Graphs: directed graphs with no cycles.
+
+eg: university class pre-requisites
+
+
+6. Bipartite Graph: Vertices can be split into two independent groups
+
+eg: how many people can be matched to a job
+
+
+7. Complete Graphs: worst case possible graphs.
+
+
+
+How do we representing Graphs:
+
+1. 2d Adjacency Matrix
+    Space: O(V*V)   Time: O(V*V)
+
+2. Adjacency List
+    Space: O(V+E)         Time: O(1) for finding in map of a map
+
+3. Edge List: list of edges with weights
+     Space: O(E)          Time: O(E)
+
+
+************************************************************
+
+Common Graph Theory Problems:
+
+1. What is connectivity: can one node be connected to other (DFS)
+2. Finding shortest path: (BFS)
+3. Dijasktra
+4. Traveling Salesman problem
+5. Minimum spanning tree
+
+
+
+
+
+
+
