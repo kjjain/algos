@@ -8,7 +8,7 @@ function fourNumberSum(array, targetSum) {
     for (let i = 0; i < array.length - 3; i++) {
         for (let j = i + 1; j < array.length - 2; j++) {
 
-            let left = 0;
+            let left = j + 1;
             let right = array.length - 1;
 
             while (left < right) {
@@ -27,8 +27,13 @@ function fourNumberSum(array, targetSum) {
             }
         }
     }
-    // Write your code here.
+
+    return result;
 }
 
 // Do not edit the line below.
 exports.fourNumberSum = fourNumberSum;
+
+if (require.main === module) {
+    console.log(fourNumberSum([7, 6, 4, -1, 1, 2], 16)); // [[7, 6, 4, -1]]
+}

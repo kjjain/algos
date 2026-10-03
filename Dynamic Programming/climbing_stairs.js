@@ -16,22 +16,23 @@
  *
  * **/
 
-function getStairs() {
-   let memo = new Map();
+// The number of ways to reach step n is the number of ways to reach step
+// n-1 (then take one more step) plus the ways to reach step n-2 (then take
+// two more steps) - i.e. it's Fibonacci. Memoized to avoid exponential blowup.
+//
+// Time:  O(n)
+// Space: O(n)
+function climbStairs(n, memo = new Map()) {
+    if (n <= 2) return n;
+    if (memo.has(n)) return memo.get(n);
 
-    function climbStairs(n, memo) {
-
-        if (n === 1) return n;
-        if (n === 2) return n;
-
-        if(memo.has(n)){
-            memo.get(n);
-        }
-
-        return (climbStairs(n, memo) + climbStairs(n - 1, memo));
-    };
-
+    const ways = climbStairs(n - 1, memo) + climbStairs(n - 2, memo);
+    memo.set(n, ways);
+    return ways;
 }
 
+module.exports = { climbStairs };
 
-console.log(getStairs(2));
+if (require.main === module) {
+    console.log(climbStairs(5)); // 8
+}

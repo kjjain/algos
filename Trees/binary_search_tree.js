@@ -6,23 +6,21 @@ class BST {
     }
 
     insert(value) {
-        //If the current value is less than existing value
         if (value < this.value) {
-            //If no left node, insert new node
             if (this.left === null) {
                 this.left = new BST(value);
             } else {
-                //else insert in left node
                 this.left.insert(value);
             }
-
+        } else if (value > this.value) {
             if (this.right === null) {
                 this.right = new BST(value);
             } else {
                 this.right.insert(value);
             }
-            return this;
         }
+        // equal values are ignored (no duplicates)
+        return this;
     }
 
 
@@ -98,4 +96,12 @@ class BST {
         }
     }
 
+}
+
+module.exports = { BST };
+
+if (require.main === module) {
+    const tree = new BST(10);
+    [5, 15, 2, 7, 12, 20].forEach((v) => tree.insert(v));
+    console.log(tree.contains(7), tree.contains(99)); // true false
 }
