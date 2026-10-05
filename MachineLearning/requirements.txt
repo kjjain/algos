@@ -1,0 +1,4 @@
+# This project uses only the Python 3 standard library (math, random,
+# collections). No third-party packages are required to run anything here -
+# that's intentional, so every matrix operation and gradient update is
+# visible in the code instead of hidden inside a library call.

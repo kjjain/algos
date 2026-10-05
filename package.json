@@ -1,0 +1,10 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "Data structures, algorithms, and a from-scratch machine learning project implemented for practice and reference.",
+  "scripts": {
+    "test": "node --test tests/**/*.test.js"
+  },
+  "license": "MIT",
+  "author": "Kamlesh Jain"
+}
