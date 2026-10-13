@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { mergeIntervals } = require('../Arrays/mergeIntervals');
 const { topKFrequent } = require('../Arrays/topKFrequentElements');
-const { search } = require('../Arrays/search_in_roated_arr');
+const { search } = require('../Searching/search_in_roated_arr');
 const { maxProduct } = require('../Arrays/max_product_subarray');
 const { fourNumberSum } = require('../Arrays/4sum');
 

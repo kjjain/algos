@@ -17,4 +17,4 @@ function twoSum(nums, target) {
     return false
 }
 
-console.log(twoSum([2,3,6,8,11,20,35], 10))
+console.log(twoSum([2,3,6,8,11,20,35], 19))

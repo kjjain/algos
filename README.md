@@ -12,21 +12,23 @@ zero external dependencies.
 | Folder | Language | Contents |
 |---|---|---|
 | [`Arrays/`](Arrays) | JavaScript | Two-pointer, sliding-window, and array manipulation problems |
-| [`Binary/`](Binary) | JavaScript | Bit-manipulation problems |
+| [`Bitwise/`](Bitwise) | JavaScript | Bitwise arithmetic and bit-manipulation problems |
 | [`DS_Basics/`](DS_Basics) | JavaScript | Big-O and data structure fundamentals (study notes) |
 | [`Dynamic Programming/`](Dynamic%20Programming) | JavaScript | Memoization and tabulation problems |
-| [`Graphs/`](Graphs) | JavaScript | BFS, DFS, Dijkstra, topological sort, union-find |
+| [`Graphs/`](Graphs) | JavaScript | Graph representation, Dijkstra, topological sort, union-find |
 | [`Heap/`](Heap) | JavaScript | Min-heap and a priority-queue-based problem |
+| [`HashTable/`](HashTable) | JavaScript | Hash tables, frequency counting, and duplicate detection |
 | [`LinkedList/`](LinkedList) | JavaScript | Singly linked list, reversal, cycle detection |
+| [`queues/`](queues) | JavaScript | Queue implementations |
+| [`Searching/`](Searching) | JavaScript | Binary search and rotated-array search problems |
 | [`sorting/`](sorting) | JavaScript | Bubble, insertion, selection, merge, quick, and heap sort |
 | [`stacks/`](stacks) | JavaScript | Stack-based problems |
 | [`Strings/`](Strings) | JavaScript | String manipulation problems |
-| [`Trees/`](Trees) | JavaScript | Binary search tree, traversals, validation, LCA |
+| [`Trees/`](Trees) | JavaScript | Binary search trees, traversals, validation, LCA |
 | [`MachineLearning/`](MachineLearning) | Python | Linear/logistic regression, KNN, K-means, and a neural network — all from scratch |
 | [`tests/`](tests) | JavaScript | `node:test` suite covering the JS algorithms |
 
-Each subfolder has its own README with a complexity table for every file
-in it.
+Topic folders include READMEs with complexity tables and descriptions.
 
 ## Running the JavaScript algorithms
 
